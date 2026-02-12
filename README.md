@@ -3,6 +3,17 @@
 ## Project Overview
 A multi-activity Android application for managing employee records with features including employee registration, department management, and employee details viewing. The app demonstrates the use of Intents (both explicit and implicit), ListViews, and background services.
 
+## Screenshots
+
+### Employee List
+![Employee List](images/employee%20list.png)
+
+### Employee Details
+![Employee Details](images/employee%20details.png)
+
+### Dialer Integration
+![Dialer](images/dialer.png)
+
 ## Features
 - **Employee List View**: Display all registered employees in a scrollable ListView
 - **Employee Registration**: Add new employees with complete details
