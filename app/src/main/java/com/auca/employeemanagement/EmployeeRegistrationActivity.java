@@ -52,7 +52,7 @@ public class EmployeeRegistrationActivity extends AppCompatActivity {
                 }
 
                 Employee employee = new Employee(employeeId, names, gender, email, phone, department);
-                EmployeeManager.getInstance().addEmployee(employee);
+                EmployeeManager.getInstance(EmployeeRegistrationActivity.this).addEmployee(employee);
 
                 Toast.makeText(EmployeeRegistrationActivity.this, 
                     "Employee registered successfully", Toast.LENGTH_SHORT).show();

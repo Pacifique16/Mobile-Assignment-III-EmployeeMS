@@ -29,7 +29,7 @@ public class EmployeeInDepartmentDetailActivity extends AppCompatActivity {
         String department = getIntent().getStringExtra("department");
         tvDepartmentName.setText("Department: " + department);
 
-        List<Employee> employees = EmployeeManager.getInstance().getEmployeesByDepartment(department);
+        List<Employee> employees = EmployeeManager.getInstance(this).getEmployeesByDepartment(department);
 
         ArrayAdapter<Employee> adapter = new ArrayAdapter<>(this, 
             android.R.layout.simple_list_item_1, employees);

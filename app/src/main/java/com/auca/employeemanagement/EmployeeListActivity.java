@@ -7,11 +7,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EmployeeListActivity extends AppCompatActivity {
     private ListView listViewEmployees;
-    private Button btnRegister, btnDepartments, btnStopMusic;
+    private Button btnRegister, btnDepartments, btnStopMusic, btnClearData;
     private ArrayAdapter<Employee> adapter;
 
     @Override
@@ -23,6 +24,7 @@ public class EmployeeListActivity extends AppCompatActivity {
         btnRegister = findViewById(R.id.btnRegister);
         btnDepartments = findViewById(R.id.btnDepartments);
         btnStopMusic = findViewById(R.id.btnStopMusic);
+        btnClearData = findViewById(R.id.btnClearData);
 
         loadEmployees();
 
@@ -57,6 +59,15 @@ public class EmployeeListActivity extends AppCompatActivity {
             }
         });
 
+        btnClearData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EmployeeManager.getInstance(EmployeeListActivity.this).deleteAllEmployees();
+                loadEmployees();
+                Toast.makeText(EmployeeListActivity.this, "All data cleared", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         // Start background music service
         startService(new Intent(this, MusicPlayerService.class));
     }
@@ -69,7 +80,7 @@ public class EmployeeListActivity extends AppCompatActivity {
 
     private void loadEmployees() {
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, 
-                EmployeeManager.getInstance().getAllEmployees());
+                EmployeeManager.getInstance(this).getAllEmployees());
         listViewEmployees.setAdapter(adapter);
     }
 }
