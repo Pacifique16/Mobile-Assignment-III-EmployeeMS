@@ -6,13 +6,13 @@ A multi-activity Android application for managing employee records with features
 ## Screenshots
 
 ### Employee List
-![Employee List](images/employee%20list.png)
+<img src="images/employee%20list.png" width="300">
 
 ### Employee Details
-![Employee Details](images/employee%20details.png)
+<img src="images/employee%20details.png" width="300">
 
 ### Dialer Integration
-![Dialer](images/dialer.png)
+<img src="images/dialer.png" width="300">
 
 ## Features
 - **Employee List View**: Display all registered employees in a scrollable ListView
