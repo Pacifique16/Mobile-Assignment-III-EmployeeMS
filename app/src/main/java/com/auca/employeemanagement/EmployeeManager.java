@@ -10,9 +10,9 @@ public class EmployeeManager {
     private EmployeeManager() {
         employees = new ArrayList<>();
         // Add sample employees
-        employees.add(new Employee("EMP001", "John Doe", "Male", "john.doe@auca.ac.rw", "+250788123456", "IT"));
-        employees.add(new Employee("EMP002", "Jane Smith", "Female", "jane.smith@auca.ac.rw", "+250788234567", "HR"));
-        employees.add(new Employee("EMP003", "Bob Johnson", "Male", "bob.johnson@auca.ac.rw", "+250788345678", "Finance"));
+        employees.add(new Employee("EMP001", "Pacifique HARERIMANA", "Male", "pacifique.harerimana@auca.ac.rw", "+250788123456", "IT"));
+        employees.add(new Employee("EMP002", "Queen UWISHEJA", "Female", "queen.uwisheja@auca.ac.rw", "+250788234567", "HR"));
+        employees.add(new Employee("EMP003", "Julien MUGISHA", "Male", "julien.mugisha@auca.ac.rw", "+250788345678", "Finance"));
     }
 
     public static synchronized EmployeeManager getInstance() {
