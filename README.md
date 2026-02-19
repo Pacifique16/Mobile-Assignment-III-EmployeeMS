@@ -1,9 +1,24 @@
-# Employee Management System - Android Application
+# 📱 Employee Management System - Android Application
 
-## Project Overview
-A multi-activity Android application for managing employee records with features including employee registration, department management, and employee details viewing. The app demonstrates the use of Intents (both explicit and implicit), ListViews, and background services.
+Welcome to the Employee Management System! This comprehensive Android application demonstrates modern mobile development practices with a complete CRUD implementation, real-time network monitoring, and seamless data persistence. Built with Java and SQLite, it showcases professional Android development patterns including Intents, Services, and Material Design principles.
 
-## Screenshots
+## ✨ Features
+
+This Android app is a fully functional employee management system with the following capabilities:
+
+- 📋 **Employee List View**: Display all registered employees in a scrollable ListView with real-time updates
+- ➕ **Employee Registration**: Add new employees with complete details and validation
+- ✏️ **Employee Edit**: Modify existing employee information with an intuitive dialog interface
+- 🗑️ **Employee Delete**: Remove employees with confirmation dialog for safety
+- 🏢 **Department Management**: Browse and filter employees by department (IT, HR, Finance, Marketing, Operations)
+- 👤 **Employee Details**: View comprehensive employee information with interactive phone and email fields
+- 📊 **CSV Export**: Export all employee data to CSV file with timestamp for easy data sharing
+- 🌐 **Network Status**: Real-time network connectivity monitoring (WiFi, Mobile Data, Ethernet)
+- 💾 **SQLite Database**: Persistent data storage that survives app restarts
+- 📞 **Implicit Intents**: Click-to-call and click-to-email functionality for seamless communication
+- 🎵 **Background Service**: Music player service demonstrating Android service lifecycle
+
+## 📸 Screenshots
 
 ### Employee List
 <img src="images/employee%20list.png" width="300">
@@ -145,34 +160,49 @@ EmployeeListActivity (Main)
    emailIntent.setData(Uri.parse("mailto:" + email));
    ```
 
-## Technical Implementation
+## 🛠️ Technical Implementation
 
 ### Key Components:
 - **Employee.java**: Data model implementing Serializable
-- **EmployeeManager.java**: Singleton pattern for data management
+- **EmployeeManager.java**: Singleton pattern for centralized data management
+- **MyDbHelper.java**: SQLite database helper with CRUD operations
 - **MusicPlayerService.java**: Background service using MediaPlayer
-- **5 Activities**: Complete navigation flow
-- **5 XML Layouts**: UI for each activity
+- **CSVUtils.java**: CSV export utility with timestamp generation
+- **NetworkUtils.java**: Real-time network connectivity monitoring
+- **5 Activities**: Complete navigation flow with Material Design
+- **5 XML Layouts**: Responsive UI for each activity
 
-### Permissions Required:
+### 🔐 Permissions Required:
 - `CALL_PHONE`: For phone dialing functionality
 - `INTERNET`: For email functionality
+- `ACCESS_NETWORK_STATE`: For network monitoring
+- `WRITE_EXTERNAL_STORAGE`: For CSV export (API < 29)
+- `READ_EXTERNAL_STORAGE`: For file access (API < 33)
 
-### Android Components Used:
+### 📦 Android Components Used:
 - ListView with ArrayAdapter
 - Intent (Explicit and Implicit)
 - Service (Background)
+- BroadcastReceiver (Network changes)
+- SQLite Database
+- FileProvider (Secure file sharing)
 - Serializable for data passing
 - RadioGroup for gender selection
 - Toast for user feedback
 
-## How to Run
+## 🚀 How to Run
 
-1. Clone the repository from GitLab
-2. Open project in Android Studio
-3. Sync Gradle files
-4. Run on emulator or physical device (API 21+)
-5. Grant phone permission when prompted
+```bash
+# Clone the repository
+git clone https://github.com/Pacifique16/Mobile-Assignment-III-EmployeeMS.git
+
+# Open in Android Studio
+cd Mobile-Assignment-III-EmployeeMS
+
+# Sync Gradle files
+# Run on emulator or physical device (API 21+)
+# Grant phone permission when prompted
+```
 
 ## Sample Data
 The app comes pre-loaded with 3 sample employees:
@@ -229,23 +259,45 @@ app/
 └── build.gradle
 ```
 
-## Development Environment
+## 💻 Development Environment
 - **IDE**: Android Studio
 - **Language**: Java
-- **Min SDK**: API 21 (Android 5.0)
-- **Target SDK**: API 33 (Android 13)
+- **Min SDK**: API 21 (Android 5.0 Lollipop)
+- **Target SDK**: API 33 (Android 13 Tiramisu)
 - **Build Tool**: Gradle
+- **Database**: SQLite
 
-## Future Enhancements
-- ~~SQLite database for persistent storage~~ ✓ Implemented
-- Search and filter functionality
-- Employee photo upload
-- ~~Edit and delete employee records~~ ✓ Implemented
-- Department statistics and analytics
-- ~~Export employee data to CSV/PDF~~ ✓ CSV Implemented
+## 🔮 Future Enhancements
+- ~~SQLite database for persistent storage~~ ✅ Implemented
+- 🔍 Search and filter functionality
+- 📷 Employee photo upload
+- ~~Edit and delete employee records~~ ✅ Implemented
+- 📊 Department statistics and analytics
+- ~~Export employee data to CSV/PDF~~ ✅ CSV Implemented
+- 🔔 Push notifications for updates
+- ☁️ Cloud sync with Firebase
 
-## Author
-AUCA Student - Mobile Programming Assignment III
+## 📝 License
 
-## License
-Educational Project - AUCA 2024
+© Copyright 2025 Pacifique Harerimana
+
+This project is for educational purposes as part of AUCA Mobile Programming coursework. Feel free to fork and learn from it, but please give credit where it's due.
+
+---
+
+## ⭐ Show Your Support
+
+**If you found this project helpful or interesting, please consider giving it a star!** 🌟
+
+Your support motivates me to create more educational projects and helps others discover useful resources.
+
+---
+
+### 👨‍💻 Author
+**Pacifique Harerimana**  
+AUCA Student - Mobile Programming Assignment III  
+📧 Contact: [GitHub](https://github.com/Pacifique16)
+
+---
+
+*Built with ❤️ for learning and sharing knowledge*
