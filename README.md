@@ -8,8 +8,17 @@ A multi-activity Android application for managing employee records with features
 ### Employee List
 <img src="images/employee%20list.png" width="300">
 
+### Register New Employee
+<img src="images/register%20new%20employee.png" width="300">
+
 ### Employee Details
 <img src="images/employee%20details.png" width="300">
+
+### Edit Employee Details
+<img src="images/edit%20employee%20details.png" width="300">
+
+### Delete Employee
+<img src="images/delete%20employee.png" width="300">
 
 ### Dialer Integration
 <img src="images/dialer.png" width="300">
@@ -17,8 +26,13 @@ A multi-activity Android application for managing employee records with features
 ## Features
 - **Employee List View**: Display all registered employees in a scrollable ListView
 - **Employee Registration**: Add new employees with complete details
+- **Employee Edit**: Edit existing employee information
+- **Employee Delete**: Remove employees with confirmation dialog
 - **Department Management**: Browse employees by department
 - **Employee Details**: View detailed employee information with interactive phone and email fields
+- **CSV Export**: Export all employee data to CSV file
+- **Network Status**: Real-time network connectivity monitoring
+- **SQLite Database**: Persistent data storage
 - **Implicit Intents**: Click-to-call and click-to-email functionality
 - **Background Service**: Music player service that runs in the background
 
@@ -223,12 +237,12 @@ app/
 - **Build Tool**: Gradle
 
 ## Future Enhancements
-- SQLite database for persistent storage
+- ~~SQLite database for persistent storage~~ ✓ Implemented
 - Search and filter functionality
 - Employee photo upload
-- Edit and delete employee records
+- ~~Edit and delete employee records~~ ✓ Implemented
 - Department statistics and analytics
-- Export employee data to CSV/PDF
+- ~~Export employee data to CSV/PDF~~ ✓ CSV Implemented
 
 ## Author
 AUCA Student - Mobile Programming Assignment III
