@@ -108,6 +108,19 @@ public class MyDbHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    public int updateEmployee(Employee employee) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_NAME, employee.getNames());
+        values.put(COLUMN_GENDER, employee.getGender());
+        values.put(COLUMN_EMAIL, employee.getEmail());
+        values.put(COLUMN_PHONE, employee.getPhone());
+        values.put(COLUMN_DEPARTMENT, employee.getDepartment());
+        int result = db.update(TABLE_EMPLOYEES, values, COLUMN_ID + "=?", new String[]{employee.getEmployeeId()});
+        db.close();
+        return result;
+    }
+
     public void deleteAllEmployees() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_EMPLOYEES, null, null);

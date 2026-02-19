@@ -8,7 +8,10 @@ color teal_200
 color teal_700
 color white
 id btnClearData
+id btnDelete
 id btnDepartments
+id btnEdit
+id btnExportCSV
 id btnRegister
 id btnSave
 id btnStopMusic
@@ -29,6 +32,7 @@ id tvEmail
 id tvEmployeeId
 id tvGender
 id tvNames
+id tvNetworkStatus
 id tvPhone
 layout activity_department
 layout activity_employee_detail
@@ -37,3 +41,4 @@ layout activity_employee_list
 layout activity_employee_registration
 string app_name
 style Theme.EmployeeManagement
+xml file_paths

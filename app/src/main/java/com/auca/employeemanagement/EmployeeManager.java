@@ -34,6 +34,10 @@ public class EmployeeManager {
         dbHelper.deleteEmployee(employeeId);
     }
 
+    public void updateEmployee(Employee employee) {
+        dbHelper.updateEmployee(employee);
+    }
+
     public void deleteAllEmployees() {
         dbHelper.deleteAllEmployees();
     }
