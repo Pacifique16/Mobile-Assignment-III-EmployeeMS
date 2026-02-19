@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.auca.employeemanagement.app-merged_res-28:/layout_activity_department.xml.flat",
+        "source": "com.auca.employeemanagement.app-main-30:/layout/activity_department.xml"
+    },
+    {
+        "merged": "com.auca.employeemanagement.app-merged_res-28:/layout_activity_employee_detail.xml.flat",
+        "source": "com.auca.employeemanagement.app-main-30:/layout/activity_employee_detail.xml"
+    },
+    {
+        "merged": "com.auca.employeemanagement.app-merged_res-28:/layout_activity_employee_in_department.xml.flat",
+        "source": "com.auca.employeemanagement.app-main-30:/layout/activity_employee_in_department.xml"
+    },
+    {
+        "merged": "com.auca.employeemanagement.app-merged_res-28:/xml_file_paths.xml.flat",
+        "source": "com.auca.employeemanagement.app-main-30:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.auca.employeemanagement.app-merged_res-28:/layout_activity_employee_list.xml.flat",
+        "source": "com.auca.employeemanagement.app-main-30:/layout/activity_employee_list.xml"
+    },
+    {
+        "merged": "com.auca.employeemanagement.app-merged_res-28:/layout_activity_employee_registration.xml.flat",
+        "source": "com.auca.employeemanagement.app-main-30:/layout/activity_employee_registration.xml"
+    }
+]

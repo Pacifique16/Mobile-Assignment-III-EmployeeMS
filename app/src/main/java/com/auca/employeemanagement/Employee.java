@@ -43,6 +43,26 @@ public class Employee implements Serializable {
         return department;
     }
 
+    public void setNames(String names) {
+        this.names = names;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
     @Override
     public String toString() {
         return employeeId + " - " + names;

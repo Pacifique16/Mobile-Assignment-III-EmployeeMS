@@ -1,42 +1,44 @@
 package com.auca.employeemanagement;
 
-import java.util.ArrayList;
+import android.content.Context;
 import java.util.List;
 
 public class EmployeeManager {
     private static EmployeeManager instance;
-    private List<Employee> employees;
+    private MyDbHelper dbHelper;
 
-    private EmployeeManager() {
-        employees = new ArrayList<>();
-        // Add sample employees
-        employees.add(new Employee("EMP001", "Pacifique HARERIMANA", "Male", "pacifique.harerimana@auca.ac.rw", "+250788123456", "IT"));
-        employees.add(new Employee("EMP002", "Queen UWISHEJA", "Female", "queen.uwisheja@auca.ac.rw", "+250788234567", "HR"));
-        employees.add(new Employee("EMP003", "Julien MUGISHA", "Male", "julien.mugisha@auca.ac.rw", "+250788345678", "Finance"));
+    private EmployeeManager(Context context) {
+        dbHelper = new MyDbHelper(context.getApplicationContext());
     }
 
-    public static synchronized EmployeeManager getInstance() {
+    public static synchronized EmployeeManager getInstance(Context context) {
         if (instance == null) {
-            instance = new EmployeeManager();
+            instance = new EmployeeManager(context.getApplicationContext());
         }
         return instance;
     }
 
     public void addEmployee(Employee employee) {
-        employees.add(employee);
+        dbHelper.addEmployee(employee);
     }
 
     public List<Employee> getAllEmployees() {
-        return employees;
+        return dbHelper.getAllEmployees();
     }
 
     public List<Employee> getEmployeesByDepartment(String department) {
-        List<Employee> result = new ArrayList<>();
-        for (Employee emp : employees) {
-            if (emp.getDepartment().equalsIgnoreCase(department)) {
-                result.add(emp);
-            }
-        }
-        return result;
+        return dbHelper.getEmployeesByDepartment(department);
+    }
+
+    public void deleteEmployee(String employeeId) {
+        dbHelper.deleteEmployee(employeeId);
+    }
+
+    public void updateEmployee(Employee employee) {
+        dbHelper.updateEmployee(employee);
+    }
+
+    public void deleteAllEmployees() {
+        dbHelper.deleteAllEmployees();
     }
 }
