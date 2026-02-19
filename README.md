@@ -204,11 +204,6 @@ cd Mobile-Assignment-III-EmployeeMS
 # Grant phone permission when prompted
 ```
 
-## Sample Data
-The app comes pre-loaded with 3 sample employees:
-- EMP001 - John Doe (IT)
-- EMP002 - Jane Smith (HR)
-- EMP003 - Bob Johnson (Finance)
 
 ## Testing the Features
 
@@ -268,22 +263,19 @@ app/
 - **Database**: SQLite
 
 ## 🔮 Future Enhancements
-- ~~SQLite database for persistent storage~~ ✅ Implemented
+
 - 🔍 Search and filter functionality
 - 📷 Employee photo upload
-- ~~Edit and delete employee records~~ ✅ Implemented
 - 📊 Department statistics and analytics
-- ~~Export employee data to CSV/PDF~~ ✅ CSV Implemented
 - 🔔 Push notifications for updates
 - ☁️ Cloud sync with Firebase
 
 ## 📝 License
 
-© Copyright 2025 Pacifique Harerimana
+© Copyright 2026 Pacifique Harerimana
 
 This project is for educational purposes as part of AUCA Mobile Programming coursework. Feel free to fork and learn from it, but please give credit where it's due.
 
----
 
 ## ⭐ Show Your Support
 
@@ -291,13 +283,12 @@ This project is for educational purposes as part of AUCA Mobile Programming cour
 
 Your support motivates me to create more educational projects and helps others discover useful resources.
 
----
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 **Pacifique Harerimana**  
 AUCA Student - Mobile Programming Assignment III  
 📧 Contact: [GitHub](https://github.com/Pacifique16)
 
----
 
+##
 *Built with ❤️ for learning and sharing knowledge*
